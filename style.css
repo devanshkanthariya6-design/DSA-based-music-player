@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #be5ca5, #5c75a0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Light Mode */
+.light-mode {
+  background: linear-gradient(135deg, #313030, #91a2b3);
+}
+
+/* Fix player in light mode */
+.light-mode .player {
+  background: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+/* Buttons */
+.light-mode button {
+  color: black;
+}
+
+/* Extras buttons */
+.light-mode .extras button {
+  background: #ddd;
+  color: black;
+}
+
+/* Search box */
+.light-mode input {
+  background: white;
+  color: black;
+}
+
+/* Player Card */
+.player {
+  width: 350px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(78, 4, 213, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Cover */
+#cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Song Name */
+#song-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Progress */
+#progress {
+  width: 100%;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* Controls */
+.controls button {
+  margin: 10px;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #3b3e3e;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #9f7590;
+  transform: scale(1.1);
+}
+
+/* Extras */
+.extras button {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.extras button:hover {
+  background: #555;
+}
+
+/* Search */
+.search-box {
+  margin-top: 15px;
+}
+
+.search-box input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  width: 70%;
+}
+
+.search-box button {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #7a7f86;
+  color: white;
+  cursor: pointer;
+}
+
+/* Wave Animation */
+.wave {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  height: 30px; 
+}
+
+.wave span {
+  width: 4px;
+  height: 100%;
+  margin: 2px;
+  background: #b9371d;
+  transform-origin: bottom;
+  animation: wave 1s infinite ease-in-out;
+}
+
+.wave span:nth-child(2) { animation-delay: 0.2s; }
+.wave span:nth-child(3) { animation-delay: 0.4s; }
+.wave span:nth-child(4) { animation-delay: 0.6s; }
+.wave span:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
